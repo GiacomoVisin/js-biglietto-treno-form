@@ -1,5 +1,5 @@
-
-
+// initializing the variables
+const rate = 0.21
 
 
 

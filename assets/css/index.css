@@ -103,7 +103,6 @@ button {
 }
 
 .cardBody2 {
-
     width: 94%;
     height: 70%;
     margin: 0 auto;
@@ -140,5 +139,5 @@ button {
 .labelpassenger {
     font-weight: bold;
     font-size: 14px;
-    padding: 10px;
+    padding: 5px;
 }
