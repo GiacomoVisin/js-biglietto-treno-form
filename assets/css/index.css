@@ -3,3 +3,67 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+body{
+    background-color:chocolate;
+    font-family:sans-serif
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
+
+
+.formContainer{
+    margin-top: 30px;
+    background-color: white;
+    border-radius: 5%;
+    height: 200px;
+}
+
+
+.labelContainer{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    
+}
+.inputContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.0rem;
+    gap: 10px;
+    
+}
+
+
+
+.label-input{
+    margin-top: 20px;
+}
+
+input{
+    border: 1px solid chocolate;
+    border-radius: 10px;
+    font-size: 1.0rem;
+    text-align: center;
+}
+
+.btnContainer{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+button{
+    color: chocolate;
+    width: 6rem;
+    font-size: 1.5rem;
+}
