@@ -1,69 +1,144 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-.container{
+.container {
     width: 90%;
     margin: 0 auto;
 }
 
-body{
-    background-color:chocolate;
-    font-family:sans-serif
+body {
+    background-color: chocolate;
+    font-family: sans-serif
 }
 
-h1{
+h1 {
     color: white;
     text-align: center;
 }
 
+h2 {
+    color: white;
+    text-align: center;
+}
 
-.formContainer{
+h3 {
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.formContainer {
     margin-top: 30px;
     background-color: white;
     border-radius: 5%;
     height: 200px;
 }
 
-
-.labelContainer{
-    display: flex;
-    justify-content: space-evenly;
-    gap: 10px;
-    
+.cardContainer {
+    background-color: white;
+    height: 200px;
 }
-.inputContainer{
+
+
+
+.labelContainer {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    gap: 10px;
+
+}
+
+.inputContainer {
+    display: flex;
+    justify-content: space-around;
     margin-top: 1.0rem;
     gap: 10px;
-    
+
 }
 
 
 
-.label-input{
+.label-input {
     margin-top: 20px;
 }
 
-input{
+input {
     border: 1px solid chocolate;
     border-radius: 10px;
     font-size: 1.0rem;
     text-align: center;
 }
 
-.btnContainer{
+.btnContainer {
     display: flex;
     justify-content: space-around;
     margin-top: 4rem;
     padding-left: 10rem;
     padding-right: 10rem;
 }
-button{
+
+button {
     color: chocolate;
     width: 6rem;
     font-size: 1.5rem;
+}
+
+
+.cardBody {
+    padding-top: 0.5rem;
+    border-top: 1px solid chocolate;
+    border-bottom: 1px solid chocolate;
+    width: 94%;
+    height: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    p {
+        font-weight: 900;
+    }
+
+}
+
+.cardBody2 {
+
+    width: 94%;
+    height: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    bottom: 20px;
+}
+
+.ticket-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 70%;
+    padding: 20px 10px;
+}
+
+
+.info-card {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.label {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.passenger-section {
+    background-color: grey;
+}
+
+.labelpassenger {
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px;
 }
