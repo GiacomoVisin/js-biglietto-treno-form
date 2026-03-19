@@ -28,6 +28,10 @@ let inputPassengerName = document.getElementById("name")
 let CardPassengerName = document.getElementById("passengerName")
 let inputPassengerAge = document.getElementById("age")
 let kmInput = document.getElementById("km")
+// convert to number
+let age = Number(inputPassengerAge.value)
+let km = Number(kmInput.value)
+// convert to number
 let CardSeat = document.getElementById("newSeat")
 let CardCpCode = document.getElementById("newCpCode")
 let ticketPrice = document.getElementById("newPriceTicket")
@@ -39,7 +43,7 @@ let finalPrice
 form.addEventListener(`submit`, function (e) {
     e.preventDefault()
     finalPrice = rate * kmInput.value
-      // condizioni sconto
+      // discount condition
     if (inputPassengerAge.value < 18) {
         finalPrice = finalPrice * 0.8
         cardOffer.textContent = "Biglietto scontato"
