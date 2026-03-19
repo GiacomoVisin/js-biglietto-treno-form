@@ -2,7 +2,7 @@
 
 const rate = 0.21
 
-
+//function for random numbers
 function generateNumberForCpCode() {
     return Math.floor(10000 + Math.random() * 90000);
 }
@@ -22,16 +22,20 @@ function generateNumberForSeat() {
 
 // adding the node of the card and the form
 
+//form nods
 const form = document.getElementById("cardForm")
 const resetButton = document.getElementById("reset")
 let inputPassengerName = document.getElementById("name")
 let CardPassengerName = document.getElementById("passengerName")
 let inputPassengerAge = document.getElementById("age")
 let kmInput = document.getElementById("km")
+
 // convert to number
 let age = Number(inputPassengerAge.value)
 let km = Number(kmInput.value)
 // convert to number
+
+// card nods
 let CardSeat = document.getElementById("newSeat")
 let CardCpCode = document.getElementById("newCpCode")
 let ticketPrice = document.getElementById("newPriceTicket")
@@ -66,7 +70,7 @@ form.addEventListener(`submit`, function (e) {
     form.reset()
 })
 
-
+// reset button
 resetButton.addEventListener('click', function() {
     CardPassengerName.textContent = ""
     CardSeat.textContent = ""
