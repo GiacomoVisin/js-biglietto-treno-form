@@ -1,22 +1,41 @@
-// initializing the variables
+// initializing the global variables and function
+
 const rate = 0.21
+let finalPrice
+finalPrice = rate * km
+
+function generateNumberForCpCode() {
+    return Math.floor(10000 + Math.random() * 90000);
+}
+
 
 function generateNumberForSeat() {
-  return Math.floor(10000 + Math.random() * 90000);
+    return Math.floor(Math.random() * 10) + 1;
 }
-let carrozza =  generateNumberForSeat()
 
 
+
+// initializing the global variables and function
+
+
+// adding the node of the card and the form
 
 const form = document.getElementById("cardForm")
 let inputPassengerName = document.getElementById("name")
 let CardPassengerName = document.getElementById("passengerName")
+let inputPassengerAge = document.getElementById("age")
+let CardSeat = document.getElementById("newSeat")
+let CardCpCode = document.getElementById("newCpCode")
 
 // starting the form
-form.addEventListener(`submit`, function(e){
+form.addEventListener(`submit`, function (e) {
     e.preventDefault()
-    const inputPassengerNameValue = inputPassengerName.value
+    let cpCode = generateNumberForCpCode()
+    let seat = generateNumberForSeat()
+    let inputPassengerNameValue = inputPassengerName.value
     CardPassengerName.textContent = inputPassengerNameValue
+    CardSeat.textContent = seat
+    CardCpCode.textContent = cpCode
     form.reset()
 })
 
